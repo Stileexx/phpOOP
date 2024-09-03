@@ -11,6 +11,25 @@ class Signup extends Dbh
     $this->pwd = $pwd;
   }
 
+  public function getUsername()
+  {
+    return $this->username;
+  }
+
+  public function setUsername($username)
+  {
+    $this->username = $username;
+  }
+
+  public function getPwd()
+  {
+    return $this->pwd;
+  }
+
+  public function setPwd($pwd)
+  {
+    $this->pwd = $pwd;
+  }
 
   private function insertUser()
   {
