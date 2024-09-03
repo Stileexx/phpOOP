@@ -8,19 +8,21 @@
 </head>
 
 <body>
-
+  <a style="font-size: 8px;" href="Classes/Car.php">Car</a>
 
   <?php
 
-  $brand = "Volvo";
-  $color = "Green";
+  require_once 'Classes/Car.php';
 
-  function getCarInfo($brand, $color)
-  {
-    return "Brand: " . $brand . ", Color: " . $color;
-  }
+  $car01 = new Car("BMW", "Yellow");
+  echo "<br>";
+  //$car01->setBrand("Volvo");
+  //$car01->setColor("green");
+  $car01->setColor("White"); //using not allowed value
+  echo $car01->getBrand();
+  echo "<br>";
+  echo $car01->getColor();
 
-  echo getCarInfo($brand, $color);
   ?>
 
 </body>
