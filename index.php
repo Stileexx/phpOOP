@@ -10,18 +10,12 @@
 <body>
   <a style="font-size: 8px;" href="Classes/Car.php">Car</a>
 
+  <form action="includes/signup.inc.php" method="post">
+    <input type="text" name="username">
+    <input type="password" name="pwd">
+    <button>Signup</button>
+  </form>
   <?php
-
-  require_once 'Classes/Car.php';
-
-  $car01 = new Car("BMW", "Yellow");
-  echo "<br>";
-  //$car01->setBrand("Volvo");
-  //$car01->setColor("green");
-  $car01->setColor("White"); //using not allowed value
-  echo $car01->getBrand();
-  echo "<br>";
-  echo $car01->getColor();
 
   ?>
 
